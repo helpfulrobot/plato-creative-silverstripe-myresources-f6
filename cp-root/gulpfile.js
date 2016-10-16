@@ -16,8 +16,8 @@ Configuration
 -------------------------------------------------------------------*/
 
 elixir.config.sourcemaps = true;
-elixir.config.assetsPath = 'assets';
-elixir.config.publicPath = '.';
+elixir.config.assetsPath = 'myresources';
+elixir.config.publicPath = 'themes/base';
 elixir.config.css.sass.folder = 'scss';
 elixir.config.css.autoprefix.options.browsers = ['> 1%', 'IE > 8'];
 
@@ -36,13 +36,6 @@ elixir(function(mix) {
         paths.foundation + '/dist/foundation.min.js',
         elixir.config.publicPath + '/js/foundation.min.js'
     )
-    // .webpack(
-    //     [
-    //         elixir.config.assetsPath + '/js/jquery.min.js',
-    //         elixir.config.assetsPath + '/js/foundation.min.js'
-    //     ],
-    //     elixir.config.publicPath + '/js/thirdparty.js'
-    // )
     // compile and combine scss
     .sass(
         'app.scss',
