@@ -1,0 +1,29 @@
+{
+  "name": "plato-creative/silverstripe-myresources-f6",
+  "description": "Silverstripe foundation 6 theme",
+  "type": "silverstripe-theme",
+  "keywords": ["silverstripe", "theme", "foundation 6", "f6", "foundation", "zurb"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Gorrie Coe",
+      "email": "gorriecoe@gmail.com"
+    }
+  ],
+  "require":
+  {
+    "silverstripe/framework": "^3.2",
+    "silverstripe/cms": "^3.2"
+  },
+  "extra": {
+    "installer-name": "myresources"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "post-install.sh"
+    ],
+    "post-update-cmd": [
+      "post-install.sh"
+    ]
+  }
+}

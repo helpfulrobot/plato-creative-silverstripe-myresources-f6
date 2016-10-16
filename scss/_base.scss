@@ -1,0 +1,268 @@
+/*
+Base Elements
+------------
+This file should contain base elements such as form, label, inputs or buttons.
+They also include more abstract elements like color palettes, fonts, and animations.
+Base elements are abstract and aren't often terribly useful on their own,
+but they provide a useful reference and allow you to see all your
+global styles laid out at a glance.
+*/
+
+*:focus {
+  outline: none;
+}
+
+main {
+  display: block;
+}
+
+// --------------- headings ---------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    text-transform: uppercase;
+    display: block;
+}
+
+h1 {
+
+}
+
+h2 {
+    &.main-title{
+        @extend h1;
+    }
+}
+
+h3 {
+    line-height: 1;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+// --------------- heading groups ---------------
+
+// Use to create a subheading under a main header
+// Make sure you pair the two elements in a <header> element, like this:
+//   <h1>Heading</h1>
+//   <h2>Subheading</h2>
+// or
+//   <h2>Heading</h2>
+//   <h4>Subheading</h4>
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  & + & {
+    margin-top: $subheader-margin-top;
+    margin-bottom: $subheader-margin-bottom;
+    font-weight: $subheader-font-weight;
+    line-height: $subheader-lineheight;
+    color: $subheader-color;
+  }
+}
+
+// --------------- paragraph ---------------
+p {
+    font-size: rem-calc(14);
+    @include breakpoint(large) {
+        font-size: rem-calc(18);
+    }
+}
+
+// --------------- intro text---------------
+.intro {
+    color: $primary-color;
+    font-size: rem-calc(16);
+    @include breakpoint(large) {
+        font-size: rem-calc(20);
+    }
+}
+
+// --------------- blockquote ---------------
+blockquote {
+    text-align: center;
+}
+
+// --------------- citation ---------------
+cite {
+
+}
+
+// --------------- quote with citation ---------------
+blockquote cite {
+    margin-top: rem-calc(5);
+}
+
+// --------------- inline elements ---------------
+b,
+strong {
+
+}
+
+i,
+em {
+
+}
+
+
+u {
+
+}
+
+del {
+
+}
+
+ins {
+
+}
+
+s {
+
+}
+
+sup {
+
+}
+
+sub {
+
+}
+
+small {
+
+}
+
+abbr {
+
+}
+
+kbd {
+
+}
+
+q {
+
+}
+
+code {
+
+}
+
+samp {
+
+}
+
+var {
+
+}
+
+// --------------- Time ---------------
+time {
+
+}
+
+// --------------- preformatted text ---------------
+pre {
+
+}
+
+// --------------- Hr ---------------
+hr {
+
+}
+
+// --------------- unordered list ---------------
+ul {
+
+}
+
+// --------------- ordered list ---------------
+ol {
+
+}
+
+// --------------- definition ---------------
+dl {
+
+}
+
+dt {
+
+}
+
+dd {
+
+}
+
+%icon {
+
+}
+
+// --------------- table ---------------
+table {
+
+}
+
+tr {
+
+}
+
+td {
+
+}
+
+th {
+
+}
+
+thead {
+
+}
+
+tbody {
+
+}
+
+tfoot {
+
+}
+
+// --------------- address ---------------
+address {
+
+}
+
+// --------------- images ---------------
+img {
+
+}
+
+// --------------- links ---------------
+
+a {
+
+}
+
+iframe[src*="google.com/maps/embed"]{
+    width: 100%;
+    pointer-events:none;
+}
