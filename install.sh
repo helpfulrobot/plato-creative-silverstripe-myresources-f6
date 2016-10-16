@@ -1,3 +1,2 @@
-cp -r cp-root/* ../
-cd ../
+cp -r myresources/cp-root/* ./
 npm install
