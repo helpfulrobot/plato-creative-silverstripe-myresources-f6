@@ -1,7 +1,7 @@
 {
   "name": "plato-creative/silverstripe-myresources-f6",
   "description": "Silverstripe foundation 6 theme",
-  "type": "silverstripe-theme",
+  "type": "silverstripe-module",
   "keywords": ["silverstripe", "theme", "foundation 6", "f6", "foundation", "zurb"],
   "license": "BSD-3-Clause",
   "authors": [
