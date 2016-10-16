@@ -20,10 +20,10 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "post-install.sh"
+      "bash post-install.sh"
     ],
     "post-update-cmd": [
-      "post-install.sh"
+      "bash post-install.sh"
     ]
   }
 }
