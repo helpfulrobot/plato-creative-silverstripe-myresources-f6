@@ -7,7 +7,7 @@ composer require plato-creative/silverstripe-myresources-f6; bash myresources/in
 ```
 
 ## Custom installer
-If you use this on a regular basis.  Then add the following to your installer.
+If you use this on a regular basis.  Then add the following to your installers composer file.
 ```
 {
   ...
